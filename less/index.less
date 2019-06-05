@@ -69,6 +69,7 @@ html, body {
 
 @primary: #ced5e0;
 @secondary: #8e8e8e;
+@third: rgb(245, 245, 245);
 
 body {
 	width:100%;
@@ -89,15 +90,42 @@ body {
 
 	.intro{
 		.flexcontainer();
+		flex-flow: wrap;
 		img{
 			.box();
-			width: 50%;
+			width: 40%;
 			align-self: center;
 		}
 		.introText{
 			.box();
-			width:50%;
+			width:40%;
 			text-align:center;
+			h1{
+				font-size: 1.5rem;
+				margin-bottom: 5%;
+				 
+			}
 		}
+		button{
+			font-size: 1.1rem;
+			width: 30%;
+			height: 50px;
+			margin: 5% 32%;
+			background-color: @secondary;
+			color: @third;
+			border-radius: 15px;
+		}
+	}
+
+
+
+
+
+
+	footer{
+		background-color: @secondary;
+		color: @third;
+		text-align: center;
+		.box();
 	}
 }
