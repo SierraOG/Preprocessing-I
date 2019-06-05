@@ -67,6 +67,11 @@ html, body {
 	padding: 3%;
 }
 
+.sectionHeader{
+	font-size: 1.5rem;
+	margin-bottom: 5%;
+}
+
 @primary: #ced5e0;
 @secondary: #8e8e8e;
 @third: rgb(245, 245, 245);
@@ -89,6 +94,7 @@ body {
 	}
 
 	.intro{
+		height: 80%;
 		.flexcontainer();
 		flex-flow: wrap;
 		img{
@@ -101,9 +107,7 @@ body {
 			width:40%;
 			text-align:center;
 			h1{
-				font-size: 1.5rem;
-				margin-bottom: 5%;
-				 
+				.sectionHeader();
 			}
 		}
 		button{
@@ -117,6 +121,26 @@ body {
 		}
 	}
 
+	.skills{
+		h1{
+			width: 100%
+			.sectionHeader();
+			text-align: center;
+		}
+		.list{
+			display:flex;
+			flex-flow: row wrap;
+			justify-content: flex-start;
+			a{
+				width: 10%;
+				.box();
+				padding:1%;
+				background-color: @primary;
+				border-radius:10px;
+				text-align: center;
+			}
+		}
+	}
 
 
 
