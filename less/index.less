@@ -72,6 +72,22 @@ html, body {
 	margin-bottom: 5%;
 }
 
+.single{
+	width: 100%;
+	text-align: center;
+}
+
+.halfpage{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 45%;
+	height: 50px;
+	margin: 20px;
+	padding: auto;
+	text-align: center;
+}
+
 @primary: #ced5e0;
 @secondary: #8e8e8e;
 @third: rgb(245, 245, 245);
@@ -81,31 +97,38 @@ body {
 	padding:3%;
 
 	.navbar{
-		width: 100%;
 		background-color: @primary;
 		nav{
 			.flexcontainer();
 			justify-content: flex-end;
 			font-size: 1.2rem;
+
 			a{
 				.box();
+			}
+
+			@media (max-width: 300px){
+				flex-flow: column nowrap;
+				justify-content: center;
 			}
 		}
 	}
 
+
 	.intro{
-		height: 80%;
 		.flexcontainer();
 		flex-flow: wrap;
+		border-bottom: 1px solid @secondary;
 		img{
 			.box();
 			width: 40%;
 			align-self: center;
 		}
 		.introText{
-			.box();
+			margin: 10px;
 			width:40%;
 			text-align:center;
+			padding:20% 3%;
 			h1{
 				.sectionHeader();
 			}
@@ -114,7 +137,7 @@ body {
 			font-size: 1.1rem;
 			width: 30%;
 			height: 50px;
-			margin: 5% 32%;
+			margin: 5% 35%;
 			background-color: @secondary;
 			color: @third;
 			border-radius: 15px;
@@ -122,15 +145,17 @@ body {
 	}
 
 	.skills{
+		height: 50%;
 		h1{
-			width: 100%
+			.single();
 			.sectionHeader();
-			text-align: center;
+			margin-top: 10px;
 		}
 		.list{
 			display:flex;
 			flex-flow: row wrap;
 			justify-content: flex-start;
+			margin: 2%;
 			a{
 				width: 10%;
 				.box();
@@ -142,9 +167,63 @@ body {
 		}
 	}
 
+	.workHistory{
+		h1{
+			.single();
+			.sectionHeader();
+		}
+		table{
+			width:100%;
+			height: 150px;
+			margin-bottom: 20px;
+			th{
+				padding-top: 12px;
+				padding-bottom: 12px;
+				text-align: left;
+				background-color: @secondary;
+				color: white;
+			}
+			tr{
+				padding-bottom: 5px;
+			}
+			tr:nth-child(even){
+				background-color: #f2f2f2;
+			}
+		}
+	}
 
 
-
+	.contact{
+		padding: 10% auto;
+		padding-top: 100px;
+		height: 70%;
+		h1{
+			.single();
+			.sectionHeader();
+			margin-bottom: 1%;
+		}
+		.subtext{
+			.single();
+			font-size: 1.1rem;
+			margin-bottom: 3%;
+		}
+		.contactinfo{
+			h2{
+				font-size: 1.1rem;
+			}
+			display: flex;
+			flex-flow: row wrap;
+			.phone{
+				.halfpage();
+			}
+			.email{
+				.halfpage();
+			}
+			.address{
+				.halfpage();
+			}
+		}
+	}
 
 	footer{
 		background-color: @secondary;

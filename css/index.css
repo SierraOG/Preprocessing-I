@@ -146,12 +146,25 @@ body {
   font-size: 1.5rem;
   margin-bottom: 5%;
 }
+.single {
+  width: 100%;
+  text-align: center;
+}
+.halfpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+  height: 50px;
+  margin: 20px;
+  padding: auto;
+  text-align: center;
+}
 body {
   width: 100%;
   padding: 3%;
 }
 body .navbar {
-  width: 100%;
   background-color: #ced5e0;
 }
 body .navbar nav {
@@ -164,11 +177,17 @@ body .navbar nav a {
   margin: 10px;
   padding: 3%;
 }
+@media (max-width: 300px) {
+  body .navbar nav {
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+}
 body .intro {
-  height: 80%;
   display: flex;
   justify-content: space-between;
   flex-flow: wrap;
+  border-bottom: 1px solid #8e8e8e;
 }
 body .intro img {
   margin: 10px;
@@ -178,9 +197,9 @@ body .intro img {
 }
 body .intro .introText {
   margin: 10px;
-  padding: 3%;
   width: 40%;
   text-align: center;
+  padding: 20% 3%;
 }
 body .intro .introText h1 {
   font-size: 1.5rem;
@@ -190,19 +209,26 @@ body .intro button {
   font-size: 1.1rem;
   width: 30%;
   height: 50px;
-  margin: 5% 32%;
+  margin: 5% 35%;
   background-color: #8e8e8e;
   color: #f5f5f5;
   border-radius: 15px;
 }
+body .skills {
+  height: 50%;
+}
 body .skills h1 {
-  width: 100% font-size: 1.5rem; margin-bottom: 5%;;
+  width: 100%;
   text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+  margin-top: 10px;
 }
 body .skills .list {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+  margin: 2%;
 }
 body .skills .list a {
   width: 10%;
@@ -211,6 +237,85 @@ body .skills .list a {
   padding: 1%;
   background-color: #ced5e0;
   border-radius: 10px;
+  text-align: center;
+}
+body .workHistory h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+}
+body .workHistory table {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+}
+body .workHistory table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #8e8e8e;
+  color: white;
+}
+body .workHistory table tr {
+  padding-bottom: 5px;
+}
+body .workHistory table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+body .contact {
+  padding: 10% auto;
+  padding-top: 100px;
+  height: 70%;
+}
+body .contact h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+  margin-bottom: 1%;
+}
+body .contact .subtext {
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 3%;
+}
+body .contact .contactinfo {
+  display: flex;
+  flex-flow: row wrap;
+}
+body .contact .contactinfo h2 {
+  font-size: 1.1rem;
+}
+body .contact .contactinfo .phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+  height: 50px;
+  margin: 20px;
+  padding: auto;
+  text-align: center;
+}
+body .contact .contactinfo .email {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+  height: 50px;
+  margin: 20px;
+  padding: auto;
+  text-align: center;
+}
+body .contact .contactinfo .address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+  height: 50px;
+  margin: 20px;
+  padding: auto;
   text-align: center;
 }
 body footer {
