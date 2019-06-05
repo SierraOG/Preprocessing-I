@@ -86,7 +86,7 @@ html, body {
 	margin: 20px;
 	padding: auto;
 	text-align: center;
-	@media (max-width:300px){
+	@media (max-width:500px){
 		width: 100%;
 	}
 }
@@ -108,14 +108,14 @@ body {
 
 			a{
 				.box();
-				@media (max-width:300px){
+				@media (max-width:500px){
 					border-bottom: 1px solid @secondary;
 					text-align: center;
 					margin: 0;
 				}
 			}
 
-			@media (max-width: 300px){
+			@media (max-width: 500px){
 				flex-flow: column nowrap;
 				justify-content: center;
 				width:100%;
@@ -128,14 +128,14 @@ body {
 		.flexcontainer();
 		flex-flow: wrap;
 		border-bottom: 1px solid @secondary;
-		@media (max-width:300px) {
+		@media (max-width:500px) {
 			flex-direction: column;
 		}
 		img{
 			.box();
 			width: 40%;
 			align-self: center;
-			@media (max-width:300px){
+			@media (max-width:500px){
 				width:100%;
 				margin: 10px 0;
 				padding: 0
@@ -148,8 +148,9 @@ body {
 			padding:20% 3%;
 			h1{
 				.sectionHeader();
+				font-size: 1.7rem;
 			}
-			@media (max-width:300px){
+			@media (max-width:500px){
 				width:100%;
 				margin-left: 0;
 				padding-left: 0;
@@ -163,7 +164,7 @@ body {
 			background-color: @secondary;
 			color: @third;
 			border-radius: 15px;
-			@media (max-width:300px){
+			@media (max-width:500px){
 				width: 80%;
 				margin:auto;
 				margin-bottom: 10px; 
@@ -190,7 +191,7 @@ body {
 				background-color: @primary;
 				border-radius:10px;
 				text-align: center;
-				@media (max-width:300px){
+				@media (max-width:500px){
 					width:40%;
 				}
 			}
@@ -228,8 +229,8 @@ body {
 		padding-top: 100px;
 		height: 70%;
 
-		@media (max-width:300px){
-			height: 150%;
+		@media (max-width:500px){
+			height: 100%;
 			padding: auto;
 			padding-bottom: 10px; 
 		}
